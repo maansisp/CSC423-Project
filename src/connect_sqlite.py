@@ -209,6 +209,9 @@ for (query,desc) in queries:
     print(df)
 print("--------------------------------------------------------------------------------------------------")
 
+# Commit any changes to the database
+db_connect.commit()
+
 # Close the connection if we are done with it.
 # Just be sure any changes have been committed or they will be lost.
 db_connect.close()
